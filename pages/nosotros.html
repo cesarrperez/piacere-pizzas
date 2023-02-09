@@ -4,53 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <title>Piacere</title>
 </head>
 <body>
     <header class="about-pages">
-        <img src="../img/LOGO png.png" width="110" height="110" alt="logoM">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./menu.html">Menu</a></li>
-                <li><a href="./promociones.html">Promociones</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-
-        </nav>
+        <div class="container-header">
+            <a class="logo" href="../index.html"><img src="../img/LOGO png.png" width="110" height="110" alt=""></a>
+            <nav>
+                <label for="botonMenu"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <input type="checkbox" id="botonMenu">
+                <ul id="menu">
+                    <li><a class="item-menu active" href="../index.html">Inicio</a></li>
+                    <li><a class="item-menu" href="./menu.html">Menu</a></li>
+                    <li><a class="item-menu" href="./promociones.html">Promociones</a></li>
+                    <li><a class="item-menu" href="./nosotros.html">Nosotros</a></li>
+                    <li><a class="item-menu" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero-nosotros">
             <div class="title-nosotros">
                 <img src="../img/LOGO png.png" width="300px" height="300px" alt="">
             </div>
-            
-            <!-- <img src="../img/banner1.jpg" width="1080" height="720" alt="banner-nosotros"> -->
         </section>
         <section class="info-nosotros">
             <div class="texto-nosotros">
                 <h2>Nosotros</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores est soluta nam, 
-                    debitis, reiciendis, asperiores iure vel blanditiis modi deserunt eligendi officia?
-                    Quibusdam harum laborum nobis quasi possimus ad. Non.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores est soluta nam, 
-                    debitis, reiciendis, asperiores iure vel blanditiis modi deserunt eligendi officia?
-                    Quibusdam harum laborum nobis quasi possimus ad. Non.
+                    Piacere pizza se creo con la intención de que cada persona que pueda comprar nuestros productos, pueda degustar 
+                    de una buena y rica pizza tradicional de la comida italiana, con ingredientes frescos y una masa elaborada a partir del prefermento ó masa madre
+                    lo cual hace que sea una experiencia unica en sus diferentes sabores. 
+                    <br> 
+                    esperamos que nos acompañes en este viaje que apenas inicia para Piacere Pizza, y que sean parte de esta familia.
                 </p>
             </div>
             
         </section>
-        <section>
-            <div class="contenedor">
-                <!-- <img src="../img/pizza-de-masa-madre.jpg" width="400" height="500" /> -->
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, nemo!</p>
-                <!--<div class="texto-encima">Texto</div>
-                <div class="centrado">centrado</div>-->
-            </div>
-        </section>
+
 
     </main>
     <footer>

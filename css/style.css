@@ -6,42 +6,84 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 
 /*--------HEADER----------*/ 
-header{
-    background-color: white;
-    position: sticky;
+header {
+    background-color: #fff;
+    align-items: center;
+}
+
+.container-header {
+    max-width: 1200px;
+    margin: auto;
     top: 0;
+    font-family: 'Poppins', sans-serif;
     display: flex;
+/*     flex-direction: row; */
     justify-content: space-between;
     align-items: center;
 }
 
-header nav ul{
-    list-style: none;
+
+.container-header nav {
     display: flex;
+/*     flex-direction: row; */
+    justify-content: center;
+    align-items: center;
 }
 
-header nav ul li{
-    margin: 10px 15px 15px 10px;
+.container-header nav label i {  /*Este "i" es un icono importado de font awesome. Se necesita el link en el head.  Ver el html*/
+    font-size: 25px;
+    color: rgb(255, 115, 0);
+    margin-right: 10px;
 }
 
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    }
-    
+.container-header nav label i,
+.container-header nav input {
+    display: none;
+}
+
+#menu {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu li {
+    margin: 0 20px;
+}
+#menu a{
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+#menu a:hover{
+    background: rgb(255, 115, 0);
+    color: #fff
+}
+
+.item-menu {
+    color: rgb(0, 0, 0);
+}
+
+.item-menu:hover,
+.item-menu.active {
+    color: rgb(0, 0, 0);
+}
 
 /*--------MAIN-----------*/
 .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     width: 100%;
-    height: 82vh;
+    height: 83vh;
     background-image: url("../img/banner1.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +101,6 @@ header nav ul li a{
 }
 .titlepiacere{
     text-align: center;
-    padding: 13%;
 }
 
 .galeria{
@@ -96,20 +137,27 @@ header nav ul li a{
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
-
-.flex-mapa{
-
+.contenedor-mapa{
     width: 100%;
     height: 82vh;
-    border: 2px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
     background-image: url("../img/banner5.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+.flex-mapa{
+    max-width: 1200px;
+    border: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+
     
 }
 
@@ -207,43 +255,24 @@ footer{
 
 /*--------HEADER MENU---------*/
 
-header{
-    background-color: white;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-header nav ul{
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li{
-    margin: 10px 15px 15px 10px;
-}
 
 header nav ul li a{
     text-decoration: none;
-    color: black;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
     }
-    
+
 
 
 /*--------MAIN  MENU PAGES-----------*/
 .heroMenu .pedido{
-    font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 20vh;
+    height: 22vh;
     background-image: url("../img/banner6.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
 }
 .pedido{
     display: flex;
@@ -504,7 +533,6 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     max-width: 100%;
     height: 82vh;
     background-image: url("../img/banner1.jpg");
@@ -642,7 +670,13 @@ section h1{
 
 
 
-
+@media print{
+    h1, h2{
+        font-family: 'Times New Roman', Times, serif;
+        color: green;
+        font-size: 50px;
+    }
+}
 
 
 @media screen and (max-width:1300px) {
@@ -688,12 +722,46 @@ section h1{
     }
 }
 
+@media screen and (max-width: 991px) {
 
-@media screen and (max-width:910px) {
+    #menu {
+    background-color: rgb(255, 115, 0);
+    position: fixed;
+    top: 110px;  
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 110px);
+    flex-direction: column;
+    transition: left 0.3s ease-in-out;
+    }
 
+    #menu li {
+    text-align: center;
+    line-height: 90px;
+    }
 
+    #menu li a {
+    font-size: 25px;
+    }
+    #menu a{
+        padding: 10px;
+        color: rgb(255, 115, 0);
+        background: #fff;
+        border-radius: 4px;
+        border: solid 1PX rgb(255, 255, 255);
+        transition: all 400ms ease;
+    }
+    
 
+    .container-header nav label i {
+    display: block;
+    }
 
+    #botonMenu:checked + #menu {
+    left: 0;
+    }
+
+}
 
 
 
@@ -790,6 +858,18 @@ section h1{
     .heroPromo div h2{
         font-size: 27px;
     }
+
+    .texto-nosotros p{
+        font-size: 12px;
+    }
+    .texto-nosotros h2{
+        font-size: 25px;
+    }
+
+    .hero-nosotros img{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 
@@ -855,7 +935,7 @@ section h1{
     header nav ul li{
         margin: 0px;
         padding: 0px;
-   
+
     }
 
 
@@ -954,10 +1034,20 @@ section h1{
     .heroPromo div h2{
         font-size: 25px;
     }
+    .texto-nosotros p{
+        font-size: 13px;
+    }
+    .texto-nosotros h2{
+        font-size: 25px;
+    }
+    .texto-nosotros{
+        width: 300px;
+        height: 300px;
+        border: solid blue;
+    }
+
 }
 
-
-}
     @media screen and (max-width:320px){
         
         .hero h2{
