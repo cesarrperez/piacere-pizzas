@@ -1,0 +1,56 @@
+footer{
+    background-color:  #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .pie-pagina{
+        padding: 20px 0;
+        text-align: center;
+
+        .redes-sociales{
+
+            a{
+                img{
+                    border: 1px solid #ccc;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 38px;
+                    display: inline-block;
+                    text-align: center;
+                    border-radius: 50%;
+                    margin: 0 8px;
+                    opacity: 0,75;
+                }
+            }
+
+        }
+    }
+    .pie-pagina2{
+        text-align: center;
+        .list{
+            ul{
+                margin-top: 0;
+                padding: 0;
+                list-style: none;
+                font-size: 18px;
+                line-height: 1.6;
+                li{
+                    display: inline-block;
+                    padding: 0 15px;
+                    a{
+                        color: inherit;
+                        text-decoration: none;
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .copyright{
+                margin-top: 15px;
+                font-size: 13px;
+                color: #aaa;
+            }
+        }
+    }
+
+
+}

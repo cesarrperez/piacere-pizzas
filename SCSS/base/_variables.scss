@@ -1,0 +1,56 @@
+//*VARIABLES
+
+$color-primario: #ff7300;
+$color-secundario: #fff;
+
+
+//*LISTAS
+
+$colores:
+#fff,
+#ff7300,
+#000000,
+#ccc,
+#aaa,
+#6a6a6a;
+
+
+$font-size:
+15px,
+16px,
+17px,
+20px,
+30px,
+50px,
+60px,
+70px;
+
+
+
+//*EXTENDS
+
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+//*MIXINS
+
+@mixin bkg-post ($posicion, $repeat, $size, $attach){
+    background-position: $posicion;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-attachment: $attach;
+}
+
+@mixin flex-f ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+
