@@ -43,10 +43,8 @@
     .containerMenu{
         flex-wrap: wrap;
         justify-content: space-around;
-    }
-    .containerMenu{
         .menuCard{
-            width: 300px;
+            max-width: 250px;
             height: 500px;
             img{
                 width: 350px;
@@ -54,14 +52,24 @@
             }
         }
     }
+
+    .dr-privacidad{
+        .parrafo{
+            padding: 30px;
+        }
+    }
+
 }
 
 
 
 @media screen and (max-width: 991px){
+
     header{
         width: 100%;
-        position: fixed;
+        position: sticky;
+        margin-top: 0px; 
+        top: 0px;         
         .container-header{
 
             nav{
@@ -74,10 +82,10 @@
                 #menu{
                     background-color: rgb(255, 115, 0);
                     position: fixed;
-                    top: 110px;  
+                    top: 117px;  
                     left: -100%;
                     width: 100%;
-                    height: calc(100vh - 110px);
+                    height: calc(100vh - 117px);
                     flex-direction: column;
                     transition: left 0.3s ease-in-out;
                     z-index: 10;
@@ -107,6 +115,26 @@
     
     }
 
+    .containerMenu{
+        .menuCard{
+            max-width: 250px;
+            height: 500px;
+            img{
+                width: 350px;
+                height: 300px;
+            }
+        }
+    }
+
+    .heroPromo{
+        width: auto;
+    }
+    .container-promo{
+        margin-top: auto;
+    }
+
+
+
     .info-nosotros{
         .texto-nosotros{
             h2{
@@ -118,6 +146,35 @@
                 margin-left: 25px;
                 margin-right: 25px;
             }
+        }
+    }
+    .derecho-piacere{
+        .title-drc{
+
+            height: 205px;
+            h1{
+                font-size: 35px;
+                
+            }
+        }
+
+        
+    }
+    .dr-privacidad{     
+
+        .parrafo{
+            scroll-margin-top: 120px;
+            h2{
+                
+                text-align: center;
+                font-size: 25px;
+            }
+            p{
+                text-align: justify;
+                font-size: 16px;
+                padding: 20px;
+            }
+
         }
     }
 }
@@ -184,6 +241,13 @@
             }
         }
     }
+    .bebidas-varias{
+        .bebidas{
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
     
     .container-promo {
         .publicity {
@@ -232,6 +296,36 @@
         }
 
     }
+    .derecho-piacere{
+        .title-drc{
+
+            height: 205px;
+            h1{
+                font-size: 35px;
+                
+            }
+        }
+
+        
+    }
+    .dr-privacidad{     
+
+        .parrafo{
+            padding: 5px;
+            scroll-margin-top: 120px;
+            h2{
+                
+                text-align: center;
+                font-size: 25px;
+            }
+            p{
+                text-align: justify;
+                font-size: 16px;
+                padding: 20px;
+            }
+
+        }
+    }
 }
 
 
@@ -251,13 +345,6 @@
         padding: 0px;
     }
 
-    .heroPromo{
-        div{
-            h2{
-                font-size: 27px;
-            }
-        }
-    }
     .hero-nosotros{
         div{
             img{
@@ -270,13 +357,88 @@
     .info-nosotros{
         .texto-nosotros{
             p{
-                font-size: 12px;
+                font-size: 14px;
             }
         }
 
     }
+    .mainfondo{
+        .seccion-contacto{
+            h1{
+                font-size: 50px;
+            }
+        }
+    }
+    .bebidas-varias{
+        .bebidas{
+            h3{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .info-contacto{
+        .informacion-c{
+            p{
+                padding: 20px;
+            }
+        }
+    }
 
 }
+
+@media screen and (max-width: 578px){
+    .info-nosotros{
+        .texto-nosotros{
+            width: 400px;
+            h1{
+                font-size: 35px;
+            }
+        }
+    }
+    .sub-nav{
+        .sub-barra{
+            width: auto;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                li{
+                    padding: 10px;
+                }
+            }
+
+
+        }
+    }
+    .derecho-piacere{
+        .title-drc{
+            height: 205px;
+            h1{
+                font-size: 25px;
+                
+            }
+        }
+
+        
+    }
+    .dr-privacidad{     
+
+        .parrafo{
+            padding: 5px;
+            h2{
+                margin-top: 5px;
+                text-align: center;
+                font-size: 20px;
+            }
+            p{
+                text-align: justify;
+                font-size: 14px;
+            }
+
+        }
+    }
+
+} 
     
 
 
@@ -303,14 +465,22 @@
             }
         }
     }
+    .bebidas-varias{
+        .bebidas{
+            h3{
+                font-size: 25px;
+            }
+        }
+    }
 
     .masamadre {
-        div {
-            border: 1px solid nth($colores, 1);
+        .info-masa{
             width: 400px;
-            text-align: justify;
-            display: inline-block;
+            p{
+                line-height: 1.5;
+            }
         }
+
     }
 
     .ingredientes {
@@ -319,18 +489,30 @@
             padding: 20px;
 
             .arma {
+                h3{
+                    font-size: 40px;
+                }
                 grid-column: 1 / 3;
                 grid-row: 1 / 2;
 
                 p {
-                    font-size: 16px;
+                    font-size: 14px;
                     text-align: center;
+                    line-height: 1.5;
                 }
             }
 
             .gustos {
                 grid-column: 1/3;
                 grid-row: 2/3;
+                h3{
+                    font-size: 45px;
+                }
+                ul{
+                    li{
+                        font-size: 14px;
+                    }
+                }
             }
 
         }
@@ -342,12 +524,26 @@
     }
 
     .heroPromo {
-        div {
-            h2 {
-                font-size: 27px;
+        .titlepromo {
+            h1 {
+                font-size: 40px;
             }
         }
     }
+    .info-nosotros{
+        .texto-nosotros{
+            width: 320px;
+            height: 380px;
+        }
+    }
+    .mainfondo{
+        .seccion-contacto{
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+
 }
 
 
@@ -397,9 +593,33 @@
     }
 
     .heroPromo {
-        div {
+        .titlepromo {
             h2 {
-                font-size: 25px;
+                font-size: 45px;
+            }
+        }
+    }
+    .info-nosotros{
+        .texto-nosotros{
+            width: 320px;
+            height: 380px;
+            p{
+                line-height: 1.5;
+            }
+        }
+    }
+    .mainfondo{
+        .seccion-contacto{
+            h1{
+                font-size: 45px;
+            }
+        }
+    }
+    .info-contacto{
+        .informacion-c{
+            p{
+                font-size: 14px;
+                line-height: 1.5;            
             }
         }
     }
@@ -437,22 +657,24 @@
     }
 
     .masamadre{
-        div{
-            border: 1px solid nth($colores, 1);
-            width: 250px;
+        width: 300px;
+        .info-masa{
             text-align:justify;
-            display: inline-block;
+            p{
+                line-height: 1.5;
+            }
         }
     }
     .galeria{
         img{
-            width: 350px;
-            height: 350px;
+            width: 300px;
+            height: 300px;
         }
     }
     .pedidos{
         font-family: 'Poppins', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.5;
         text-align: center;
         margin: 5%;
         color: $color-secundario;
@@ -503,41 +725,122 @@
             }
         }
     }
-    .heroPromo{
-        div{
-            h2{
+    .bebidas-varias{
+        .bebidas{
+            h3{
                 font-size: 25px;
+            }
+        }
+    }
+    .heroPromo{
+        .titlepromo{
+            h2{
+                font-size: 35px;
             }
         }
     }
 
     .info-nosotros{
         .texto-nosotros{
-            width: 300px;
-            height: 300px;
+            width: 320px;
+            height: 380px;
     
-            h2{
-                font-size: 25px;
+            h1{
+                font-size: 35px;
     
             }
                 p{
                     font-size: 14px;
+                    line-height: 1.5;
                 }
+        }
+    }
+    .mainfondo{
+        .seccion-contacto{
+            h1{
+                font-size: 40px;
+            }
+        }
+    }
+
+    .sub-nav{
+        .sub-barra{
+            width: auto;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                li{
+                    padding: 10px;
+                }
+            }
+
+
+        }
+    }
+    .derecho-piacere{
+        .title-drc{
+
+            height: 205px;
+            h1{
+                font-size: 25px;
+                
+            }
+        }
+
+        
+    }
+    .dr-privacidad{     
+
+        .parrafo{
+            scroll-margin-top: 120px;
+            h2{
+                margin-top: 15px;
+                text-align: center;
+                font-size: 20px;
+            }
+            p{
+                text-align: justify;
+                font-size: 14px;
+                padding: 25px 25px 25px 25px;
+            }
+
+        }
+    }
+    .hero-preguntas{
+        h1{
+            font-size: 40px;
+        }
+    }
+    .pyr{
+        .preguntas-f{
+            h2{
+                text-align: center;
+                font-size: 20px;
+            }
+            p{
+                margin: 15px;
+                text-align: justify;
+                font-size: 14px;
+            }
         }
     }
     
 }
 
 
-@media screen and (max-width:320px){
+@media screen and (max-width:320px){  
+
     .hero{
-        h2{
-            color: $color-secundario;
-            font-size: 36px;
+        .titlepiacere{
+            h1{
+                color: $color-secundario;
+                font-size: 50px;
+            }
+            h4{
+                font-size: 14px;
+            }
         }
-        h4{
-            font-size: 13px;
-        }
+        
     }
     .variedadPizzas{
         div{
@@ -545,6 +848,13 @@
                 font-size: 20px;
                 text-align: center;
                 margin: 5px;
+            }
+        }
+    }
+    .bebidas-varias{
+        .bebidas{
+            h3{
+                font-size: 25px;
             }
         }
     }
@@ -557,14 +867,16 @@
         }
     }
     .masamadre{
+        width: 250px;
         .info-masa{
             h2{
                 text-align: center;
-                margin-top:  30px;
                 font-size: 20px;
             }
             p{
-                font-size: 12px;
+                font-size: 13px;
+                line-height: 1.5;
+
             }
         }
     }
@@ -584,34 +896,52 @@
                     height: 150px;
                 }
             }
+            .pedidos{
+                a{
+                    padding: 4px;
+                    font-size: 12px;
+                }
+            }
 
         }
     }
 
     .heroPromo{
-        div{
+        .titlepromo{
             h2{
-                font-size: 25px;
+                font-size: 30px;
             }
         }
     }
-    .seccion-contacto{
-        h1{
-            font-size: 30px;
+    .mainfondo{
+        .seccion-contacto{
+            h1{
+                font-size: 40px;
+            }
         }
     }
+
     .col-contacto{
         font-size: 16px;
     }
     h3{
-        font-size: 20px;
+        font-size: 16px;
     }
+    .info-contacto{
+        .informacion-c{
+            p{
+                font-size: 13px;
+                line-height: 1.5;            
+            }
+        }
+    }
+
     .info-nosotros{
         .texto-nosotros{
-            width: 250px;
-            height: 300px;
+            width: 270px;
+            height: 330px;
     
-            h2{
+            h1{
                 font-size: 25px;
     
             }
@@ -620,9 +950,10 @@
                     margin-top: 5px;
                     margin-left: 5px;
                     margin-right: 5px;
-                    line-height: 16px;
+                    line-height: 1.3;
                 }
         }
     }
+
 }
 
