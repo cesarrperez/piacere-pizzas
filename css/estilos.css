@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:ital,wght@0,200;0,400;0,500;1,500&display=swap");
-.hero, .contenedor-mapa, .galeriaMenu, .heroPromo .titlepromo, .hero-nosotros, .info-nosotros, .mainfondo .seccion-contacto .formulario div .col-contacto, .info-contacto, .sub-nav .sub-barra, .derecho-piacere .title-drc {
+.hero, .contenedor-mapa, .galeriaMenu, .hero-gaseosas .hero-bebidas, .heroPromo .titlepromo, .hero-nosotros, .info-nosotros, .mainfondo .seccion-contacto .formulario div .col-contacto, .info-contacto, .sub-nav .sub-barra, .derecho-piacere .title-drc {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -301,20 +301,50 @@ header {
 
 .bebidas-varias {
   width: 100%;
-  height: 16vh;
+  height: 10vh;
   background: #ff7300; }
   .bebidas-varias .bebidas {
     max-width: 1200px;
-    height: 16vh;
-    display: flex;
-    justify-content: left;
+    margin: auto;
     font-family: 'Poppins', sans-serif; }
     .bebidas-varias .bebidas h3 {
       display: flex;
-      align-items: center;
+      justify-content: center;
       margin-left: 20px;
       color: #fff;
       font-size: 35px; }
+
+.hero-gaseosas {
+  background-color: #ff7300;
+  width: 100%;
+  height: 10vh; }
+  .hero-gaseosas .hero-bebidas {
+    max-width: 1200px;
+    margin: auto; }
+    .hero-gaseosas .hero-bebidas .title-b {
+      color: #fff;
+      font-family: 'Poppins', sans-serif; }
+      .hero-gaseosas .hero-bebidas .title-b h1 {
+        font-size: 35px; }
+      .hero-gaseosas .hero-bebidas .title-b h2 {
+        font-size: 18px; }
+
+.marcas-bebidas {
+  width: 100%;
+  height: auto;
+  background-color: #F6F6F6; }
+  .marcas-bebidas .productos-g {
+    max-width: 1200px;
+    margin: auto; }
+    .marcas-bebidas .productos-g div {
+      background-color: #fff;
+      width: 310px;
+      height: 300px;
+      margin: 35px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      color: #6a6a6a;
+      display: inline-block; }
 
 /* ------------------MAIN PROMOCIÓN------------------- */
 .heroPromo {
@@ -679,6 +709,14 @@ footer {
       height: 300px; }
   .variedadPizzas div p {
     font-size: 30px; }
+  .ingredientes .preparar .arma h3 {
+    font-size: 45px; }
+  .ingredientes .preparar .arma p {
+    font-size: 16px; }
+  .ingredientes .preparar .gustos h3 {
+    font-size: 45px; }
+  .ingredientes .preparar .gustos p {
+    font-size: 16px; }
   .bebidas-varias .bebidas h3 {
     font-size: 30px; }
   .container-promo .publicity {
@@ -721,6 +759,12 @@ footer {
       text-align: justify;
       font-size: 16px;
       padding: 20px; } }
+
+@media screen and (max-width: 763px) {
+  .marcas-bebidas .productos-g {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 660px) {
   .heroMenu .pedido h2 {
@@ -778,8 +822,10 @@ footer {
     font-size: 29px;
     text-align: center;
     margin: 5px; }
-  .bebidas-varias .bebidas h3 {
-    font-size: 25px; }
+  .bebidas-varias {
+    height: auto; }
+    .bebidas-varias .bebidas h3 {
+      font-size: 25px; }
   .masamadre .info-masa {
     width: 400px; }
     .masamadre .info-masa p {
@@ -812,7 +858,18 @@ footer {
     width: 320px;
     height: 380px; }
   .mainfondo .seccion-contacto h1 {
-    font-size: 45px; } }
+    font-size: 45px; }
+  .hero-gaseosas {
+    height: auto; }
+    .hero-gaseosas .hero-bebidas {
+      flex-direction: column;
+      justify-content: center; }
+      .hero-gaseosas .hero-bebidas .title-b {
+        margin: 5px; }
+        .hero-gaseosas .hero-bebidas .title-b h1 {
+          font-size: 25px; }
+        .hero-gaseosas .hero-bebidas .title-b h2 {
+          font-size: 14px; } }
 
 @media screen and (max-width: 465px) {
   body {

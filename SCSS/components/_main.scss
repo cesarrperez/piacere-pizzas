@@ -299,24 +299,68 @@
 
 .bebidas-varias {
     width: 100%;
-    height: 16vh;
+    height: 10vh;
     background: nth($colores, 2);
 
     .bebidas {
         max-width: 1200px;
-        height: 16vh;
-        display: flex;
-        justify-content: left;
+        margin: auto;
+        
         font-family: 'Poppins', sans-serif;
 
         h3 {
             display: flex;
-            align-items: center;
+            justify-content: center;
             margin-left: 20px;
             color: $color-secundario;
             font-size: 35px;
         }
     }
+}
+
+.hero-gaseosas{
+    background-color: $color-primario;
+    width: 100%;
+    height: 10vh;
+    .hero-bebidas{
+        max-width: 1200px;
+        margin: auto;
+        @extend %flex;
+
+        .title-b{
+            color: $color-secundario;
+            font-family: 'Poppins', sans-serif;
+            h1{
+                font-size: 35px;
+            }
+            h2{
+                font-size: 18px;
+            }
+
+        }
+    }
+}
+.marcas-bebidas{
+    width: 100%;
+    height: auto;
+    background-color: #F6F6F6;
+
+
+    .productos-g{
+        max-width: 1200px;
+        margin: auto;
+        div{
+            background-color: #fff;
+            width: 310px;
+            height: 300px;
+            margin: 35px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            color: nth($colores, 6);
+            display: inline-block;
+        }
+    }
+
 }
 
 /* ------------------MAIN PROMOCIÓN------------------- */
@@ -607,6 +651,8 @@
         }
     }
 }
+
+
 
 
 

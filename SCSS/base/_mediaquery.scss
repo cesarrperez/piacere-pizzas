@@ -241,6 +241,26 @@
             }
         }
     }
+    .ingredientes{
+        .preparar{
+            .arma{
+                h3{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .gustos{
+                h3{
+                    font-size: 45px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
     .bebidas-varias{
         .bebidas{
             h3{
@@ -328,6 +348,15 @@
     }
 }
 
+@media screen and (max-width: 763px){
+    .marcas-bebidas{
+        .productos-g{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
 
 @media screen and (max-width: 660px){
 
@@ -466,6 +495,7 @@
         }
     }
     .bebidas-varias{
+        height: auto;
         .bebidas{
             h3{
                 font-size: 25px;
@@ -540,6 +570,22 @@
         .seccion-contacto{
             h1{
                 font-size: 45px;
+            }
+        }
+    }
+    .hero-gaseosas{
+        height: auto;
+        .hero-bebidas{
+            flex-direction: column;
+            justify-content: center;
+            .title-b{
+                margin: 5px;
+                h1{
+                    font-size: 25px;
+                }
+                h2{
+                    font-size: 14px;
+                }
             }
         }
     }
